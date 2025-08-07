@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="name">NAME</label>
+        <input type="text" id="name" name="NAME">
+        <br><br>
+        <label for="place">PLACE</label>
+        <input type="text" id="place" name="PLACE">
+        <br><br>
+        <label for="address">ADDRESS</label>
+        <textarea id="address" name="aaddresss" placeholder="please type your address!" rows="3px" cols="30px"></textarea>
+        <br><br>
+        <label for="seasons">CHOOSE THE FAV SEASON</label>
+        <select id="seasons" name="season">
+        <option value=""selected disabled hidden>choose from here</option>
+        <option value="summer">summer</option>
+        <option value="winter">winter</option>
+        <option value="rainy">rainy</option>
+        <option value="spring">spring</option>
+        </select>
+        <br><br>
+        <label for="season2">CHOOSE BASED ON PREFERENCE!</label>
+        <select id="season2" name="seasonneeded">
+        <option value=""selected disabled hidden>choose from here!</option>
+        <optgroup label="HOT SEASONS">
+         <option value="summer">summer</option>
+         <option value="spring">spring</option>
+        </optgroup>
+        <optgroup label="COLD SEASONS">
+          <option value="rainy">rainy</option>
+          <option value="winter">winter</option>
+        </optgroup>
+        </select>
+        <br> <br>
+        <label for="fever">SEASON CHANGE FEVER</label>
+        <input list="fe" id="fever" placeholder="eg:viral fever">
+        <datalist id="fe">
+            <option value="viral fever"></option>
+            <option value="migrain"></option>
+            <option value="stomach pain"></option>
+            <option value="climate sickness"></option>
+        </datalist>
+        <br><br>
+        <button>SUBMIT</button>
+    </form>
+    
+</body>
+</html>

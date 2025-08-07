@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+
+<p id="alone">halo, i'm here for you</p>
+<h1>hai all</h1>
+<h2 class="one">po</h2>
+<h2 class="one"> </h2>
+
+
+
+<script>
+var a=document.getElementById("alone"); //replace content using id
+a.textContent="replace me"
+//a.textContent="<p>replace me</p>" it displays the paragraph tag also
+//a.innerHTML="<p>replace me</P>" it only displays the content without showing the p tag
+
+
+var b=document.getElementsByTagName("h1"); //replace content using tag name
+for(i=0; i<b.length; i++) // loop is used to execte multiple time , since the same tag used in multiple times
+{
+b[i].innerHTML="gone"
+}
+
+
+var c=document.getElementsByClassName("one") //replace using class
+for (a=0; a<c.length; a++)
+{
+c[a].innerHTML="two"
+}
+
+const x=document.createElement("h6") //create a new tag inside the body
+x.textContent=("its a new element")
+document.body.appendChild(x)
+
+
+
+</script>
+</body>
+</html>

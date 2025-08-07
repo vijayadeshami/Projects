@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click">Submit</button>
+    <button id="here">press</button>
+    <button id="hi">oh</button>
+
+    <br><br>
+    <button id="j">demo</button>
+
+    <br><br>
+    <button id="ji">dp</button>
+    <script>
+        var button=document.getElementById("click");
+        function bb()
+        {
+            alert("please be sure")
+        }
+        button.addEventListener('click',bb);
+    </script>
+    <script>
+        var b=document.getElementById("here");
+        function bbl()
+        {
+            alert("Are u sure")
+        }
+        b.addEventListener('dblclick',bbl);
+    </script>
+    <script>
+        var c=document.getElementById("hi");
+        function bbld()
+        {
+            alert("hi there")
+        }
+        c.addEventListener('keypress',bbld);
+         setTimeout(()=>{ c.removeEventListener('keypress',bbld);},6000);
+    </script>
+    <script>
+        var d=document.getElementById("j");
+        const  bbldo=()=>
+        {
+            alert("hello there")
+        }
+        d.addEventListener('mouseover',bbldo); 
+       setTimeout(()=>{ d.removeEventListener('mouseover',bbldo);},6000);
+    </script>
+     <script>
+        var e=document.getElementById("ji");
+        e.addEventListener('keydown',   ()=>{alert("woah")});      
+    </script>
+
+
+
+</body>
+</html>

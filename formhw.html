@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <label for="details">Name</label>
+        <input type="text" id="details" name="NAME"> 
+        <br> <br>
+        <label for="si">Course</label>
+        <input type="text" id="si" name="COURSE">
+        <br> <br>
+        <label for="ad">Address</label>
+        <textarea name="ADDRESS" id="ad" placeholder="type your address here!" rows="5px" cols="20px"></textarea>
+        <br> <br>
+
+        <label for="flowers">choose a flower</label>
+        <select id="flowers" name="FLOWER">
+        <option value="" selected disabled hidden>select here</option>
+        <option value="lily">lily</option>
+        <option value="rose">rose</option>
+        <option value="lotus">lotus</option>
+        <option value="tulip">tulip</option>
+        </select>
+
+        <br> <br>
+        <label for="flower2">choose by mode of habitat</label>
+        <select id="flower2" name="flowermode">
+        <option value=""selected disabled hidden>select here</option>
+        <optgroup label="living in water">
+        <option value="lily">lily</option>
+        <option value="lotus">lotus</option>  
+        </optgroup>
+        <optgroup label="living in soil">
+        <option value="rose">rose</option>
+        <option value="tulip">tulip</option>
+        </optgroup>
+        </select>
+        <br><br>
+        <label for="colors">choose the color</label>
+        <input list="flowercolor"id="colors" name="COLOURS" placeholder="eg:red">
+        <datalist id="flowercolor">
+        <option value="red"></option>
+        <option value="yellow"></option>
+        <option value="pink"></option>
+        <option value="violet"></option>
+        </datalist>
+        <br><br>
+        <button>SUBMIT</button>
+    </form>
+</body>
+</html>

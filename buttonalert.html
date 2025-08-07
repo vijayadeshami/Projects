@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="click">click here</button>
+    <button id="one">press</button>
+    <button id="second">demo</button>
+    <button id="first">sub</button>
+    <script>
+        var a=document.getElementById("click");
+        function clicker()
+        {
+            setTimeout(()=>{ alert("clicked")},1000);
+
+        }
+           
+            a.addEventListener('click',clicker);
+    </script>
+    <script>
+        var b=document.getElementById("one")
+        b.addEventListener('click',function(){
+             console.log("warning");
+        })
+       
+
+    </script>
+    <script>
+        var c=document.getElementById("second")
+        c.addEventListener('click',()=>{alert("danger")});
+    </script>
+    <script>
+        var d=document.getElementById("first")
+        d.addEventListener('click',function(){
+            alert("warn");
+        })
+    </script>
+</body>
+</html>

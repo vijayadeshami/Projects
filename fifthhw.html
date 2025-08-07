@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            background-color:bisque;
+            border: 1px solid black;
+            padding: 10px 10px 10px 10px;
+            margin: 60px 60px 60px 100px;
+            margin: auto;
+            max-width: 800px;
+            border-radius:10px ;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        body{
+            background-color:rgb(152, 123, 123);
+            background-image:url(images/c.webp);
+        }
+        
+        label{
+            color: black;
+        }
+        h1{
+            color: black;
+            text-align: center;
+        }
+        input[type="submit"]
+        {
+            margin-left:300px;
+
+        }
+
+    </style>
+</head>
+<body>
+<form action="https://en.wikipedia.org/" method="get" target="_self" >
+    <h1>STUDENT DETAILS!</h1>
+    <label for="fname">FIRSTNAME</label>
+    <input type="text" id="fname"  name="firstname" required>
+    <br><br>
+    <label for="lname">LASTNAME</label>
+    <input type="text" id="lname" name="lastname">
+    <br><br>
+    <label for="reg"><b>REGNO</b></label>
+    <input type="text" id="reg" name="regno" pattern="[0-9]" maxlength="\d(10px)">
+    <br><br>
+    <label for="clgname">COLLEGE NAME</label>
+    <input type="text" id="clgname" name="colgname">
+    <br><br>
+    <label for="addr">ADDRESS</label>
+    <textarea id="addr" name="address" placeholder="please enter your address" rows="7px" cols="20px" maxlength="10px"></textarea>
+    <br><br>
+    <label for="dep">DEPARTMENT</label>
+    <select id="dep" name="department">
+    <option value=""selected disabled hidden>CHOOSE</option>
+    <option value="CSE">CSE</option>
+    <option value="ME">ME</option>
+    <option value="ECE">ECE</option>
+    <option value="CE">CE</option>
+    <option value="EEE">EEE</option>
+    </select>
+    <br><br>
+    <label for="dob">DOB</label>
+    <input type="date" required>
+    <br><br>
+    <label for="email">email</label>
+    <input type="email">
+    <br><br>
+    <label for="gender">GENDER</label>
+    <input type="radio" name="ab" checked>
+    <label for="male">M</label>
+    <input type="radio" name="ab">
+    <label for="female">F</label>
+    <br><br>
+    <label for="pass"><b>PASSWORD</b></label>
+    <input type="password" readonly>
+    <label for="files">FILES</label>
+    <input type="file">
+    <br><br>
+    <label for="sug">PLEASE ENTER YOUR SUGGESTIONS</label>
+    <textarea id="sug" name="suggestions" placeholder="feel free to write your suggestions!" rows="7px" cols="10px"></textarea>
+    <br><br>
+    <input type="submit" value="submit">
+</form>
+
+
+</body>
+</html>

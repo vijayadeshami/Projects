@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+    class Animal{
+        constructor(name){
+            this.name=name;
+        }
+        makesound(){
+            console.log("baoo");
+        }
+        
+    }
+    class Dog extends Animal{//multiple child can be derived frm parent clss and hence reuseability of code can be enhanced
+        constructor(name,breed){
+            super(name);
+            this.breed=breed;
+        }
+        makesound(){//method overriding since parent and child same functn
+            console.log("bark");
+        }
+    }
+    class Cat extends Animal{
+        constructor(name,color){
+            super(name);
+            this.color=color;
+        }
+        makesound()
+        {
+            console.log("meowww");
+        }
+    }
+    function animalsound(animal){//create a method ,with this same interface all the class  can be accessed,polymorphsm refers to many forms
+        animal.makesound()
+    }
+    const mydog=new Dog("oreo","lab");
+    const mycat=new Cat("whiskey","white");
+    animalsound(mydog);
+    animalsound(mycat);
+  </script>  
+</body>
+</html>

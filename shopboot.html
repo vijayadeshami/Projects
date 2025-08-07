@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+   <style>
+    fieldset.custom-border {
+      border: 2px dashed black !important;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    legend.custom-legend {
+      font-weight: bold;
+      font-style: italic;
+    }
+  </style>
+
+</head>
+<body>
+    <div class="container-fluid" style="background-image: url(images/onl.jpg);background-repeat: no-repeat;background-size: cover; height: 1500px;">
+    <form action="" method="post" target="_blank">
+        <h1 style="padding-left:450px; "  ><b><i>Shop / Store – Dropdown for categories:</i></b></h1>
+        <br><br>
+        <div class="mb-3">
+        <label for="occasion" class="form-label"><b>Choose by Occasion</b></label>
+        <select class="form-select" id="occasion" name="occasion" required>
+          <option value="" selected disabled hidden>CHOOSE</option>
+          <option value="ethinic">Ethinic</option>
+          <option value="western">Western</option>
+          <option value="casual">Casual</option>
+          <option value="formal">Formal</option>
+          <option value="partywear">Partywear</option>
+        </select>
+      </div>
+        <div class="mb-3">
+        <label for="preference" class="form-label"><b>Choose by Preference</b></label>
+        <select class="form-select" id="preference" name="preference" required>
+          <option value="" selected disabled hidden>CHOOSE</option>
+          <optgroup label="Men">
+            <option value="t-shirts">T-Shirts</option>
+            <option value="jeans">Jeans</option>
+            <option value="shoes">Shoes</option>
+          </optgroup>
+          <optgroup label="Women">
+            <option value="dresses">Dresses</option>
+            <option value="tops">Tops</option>
+            <option value="accessories">Accessories</option>
+          </optgroup>
+          <optgroup label="Kids">
+            <option value="boys">Boys</option>
+            <option value="girls">Girls</option>
+          </optgroup>
+        </select>
+      </div>
+
+        <div class="mb-3">
+        <label for="sale" class="form-label"><b>Offers</b></label>
+        <select class="form-select" id="sale" name="discount" required>
+          <option value="" selected disabled hidden>CHOOSE</option>
+          <option value="new arrivals">New Arrivals</option>
+          <option value="discounts">Discounts</option>
+          <option value="sales">Sales</option>
+          <option value="buy1get2">Buy 1 Get 2 Free</option>
+          <option value="jackpots">Jackpots</option>
+        </select>
+      </div>
+
+      <div class="text-center mb-4">
+        <input type="submit" class="btn btn-primary" value="Submit Selections">
+      </div>
+       <fieldset class="custom-border">
+      <legend class="custom-legend">Additional Options</legend>
+      <div class="mb-3">
+        <label for="files" class="form-label"><b>Upload Reference Pic</b></label>
+        <input type="file" name="file" id="files" class="form-control">
+      </div>
+    </fieldset>
+     <div class="text-center mt-4">
+      <input type="submit" class="btn btn-dark" value="Submit">
+    </div>
+    </form>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData(callback){
+            setTimeout(function(){
+                const data="some data"
+                callback(data)
+            },2000);
+        }
+        function processData(data){//data is used as argument so that the scnd functn wait until the frst fuctn finishes its execution
+           console.log("received",data);
+        }
+        fetchData(processData)
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Fruits{
+        
+            constructor(fav,taste,rate)//used to intialize obj(instnce nthe data ethil aan vann save avune)
+            {
+                this.fav=fav;
+                this._taste=taste;
+                this._rate=rate;//making it private using underscore ie encapsulation
+            
+            }
+        
+        display()
+        {
+            console.log(this.fav,this._taste,this.rate);//since underscore is being wriiten while printing then taste cab be viewed
+        }
+        }
+        let obj=new Fruits("strawberry","sweet","expensive","alot");//obj name="new" class name//frst instance
+        let obj1=new Fruits("orange","sour","moderate","average");//scnd instance
+        obj.display();//obj name functn name
+        obj1.display();
+
+    </script>
+</body>
+</html>

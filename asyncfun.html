@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function fetchData(){
+            return new Promise (function(resolve,reject){//frst pending then resolve rjct
+               setTimeout(function(){
+                const data="some data"
+                resolve(data)//we can give reject also then catch works,for resolve try works
+                
+            },2000);
+
+            })
+           
+        }
+       async function getData() {//mainly used in website to fetch data
+        try{
+             data=await fetchData()//await used to wait until fetchData arrives
+        console.log("received",data);
+        }
+        catch(error){//used to handle reject
+        console.error("error in fetching the data",error)
+       
+       }
+       }
+        getData()
+       </script>
+</body>
+</html>
